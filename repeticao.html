@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição</title>
+    <script>
+        //Estrutura de repetição while
+        /*
+        while(sentença){
+            ...codigo
+        }
+
+        //Estrutura de repetição for
+        for(inicio;sentença;incremento){
+            ...codigo
+        }
+
+        //Estrutura de repetição do while
+        do{
+            ...codigo
+        }while(sentença)
+        */
+
+        let contador = 0;
+        console.log("Contador: " + contador);
+        while(contador <= 10){
+            alert("while: " + contador);
+            contador++;
+            console.log("Contador while: " + contador);
+        }
+
+        for(let inicio=0; inicio <= 10; inicio++){
+            alert("for: " + inicio);
+            console.log("Contador for: " + inicio);
+        }
+
+        let teste = 0;
+        do{
+            alert("do...while: " + teste);
+            console.log("Contador do...while: " + teste);
+            teste++;
+        }while(teste <= 10);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
