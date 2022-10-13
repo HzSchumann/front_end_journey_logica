@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    Nota 1: <input type="text" id="nrNota1"><br/>
+    Nota 2: <input type="text" id="nrNota2"><br/>
+    Nota 3: <input type="text" id="nrNota3"><br/>
+    <input type="button" id="btnMaior" value="Mostre o maior" onclick="funcMaior()"/>
+    <div id="resultadoMaior"></div>
+    <script>
+
+        function funcMaior(){
+            let nota1;
+            let nota2;
+            let nota3;
+            let nota_maior;
+            nota_maior = 0;
+            nota1 = parseInt(document.getElementById("nrNota1").value);
+            nota2 = parseInt(document.getElementById("nrNota2").value);
+            nota3 = parseInt(document.getElementById("nrNota3").value);
+
+            if(nota1 > nota2 && nota1 > nota3){
+                nota_maior = nota1;
+            }else if(nota2 > nota3){
+                nota_maior = nota2;
+            }else{
+                nota_maior = nota3;
+            }
+
+            document.getElementById("resultadoMaior").innerHTML = "Maior Nota: " + nota_maior;
+        }
+
+        // nota_maior = 0
+        // nota1 = parseInt(prompt("Informe a nota 1?"));
+        // nota2 = parseInt(prompt("Informe a nota 2?"));
+        // nota3 = parseInt(prompt("Informe a nota 3?"));
+
+        // if(nota1 > nota3 && nota2 > nota3){
+        //     alert("Nota 1: " + nota1 + " Nota 2: " + nota2 + " são as maiores!");
+        // }else if(nota1 > nota2 && nota3 > nota2){
+        //     alert("Nota 1: " + nota1 + " Nota 3: " + nota3 + " são as maiores!");
+        // }else{
+        //     alert("Nota 2: " + nota2 + " Nota 3: " + nota3 + " são as maiores!");
+        // } 
+
+        
+
+
+        // media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3)) / 3;
+
+        // if(media >= 6){
+        //     alert("O seu status é Aprovado ");
+        // }else{
+        //     alert("O seu status é Reprovado ");    
+        // }     
+    </script>
+    
+</body>
+</html>

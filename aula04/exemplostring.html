@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let nome = "Henzo Schumann Barbosa";
+        console.log('Quantidade Caracter: ' + nome.length); //retorna a quantidade de elementos;
+        //posicao 1 - elemento 0 (índice)
+
+        let re = /[A-Z]/g // expressão regular
+        let reDot = /[.]/g // expressão regular
+        console.log(nome.search(re))
+        console.log(nome.search(reDot)) // retorna -1 pois não conseguiu encontrar o ponto "."
+
+        //Pega a posição do elemento e retorna o caractere
+        console.log("índice 0 - Posição 1: " + nome.charAt(0));
+
+        for(let ind=0; ind<nome.length; ind++){
+            console.log("índice " + ind + " - Posição " + parseInt(ind + 1) + " : " + nome.charAt(ind));
+            console.log("Valor: " + nome[ind]);
+            console.log("ASCII: " + nome.charCodeAt(ind));
+        }
+
+        //Transforma o valor em maiusculo
+        console.log("Maiúsculo " + nome.toLocaleUpperCase())
+
+        //Transforma o valor em minusculo
+        console.log("Minúsculo " + nome.toLocaleLowerCase())
+
+        //Vetor
+        let notas = [5, 5.5, 10];
+        console.log("Notas: " + notas[0]);
+        console.log("Notas: " + notas[1]);
+        console.log("Notas: " + notas[2]);
+
+        notas[3] = 6
+
+        console.log("Notas: " + notas[3]);
+
+        //acrescenta conteudo na lista
+        notas.push(20);
+
+        //tira o último conteudo da lista
+        notas.pop();
+
+        console.log("Início FOR");
+        for(let ind = 0; ind < notas.length; ind++){
+            console.log("Notas: " + notas[ind]);
+        }
+
+        console.log("Início While");
+        
+        let cont = 0;
+        while(cont < notas.length){
+            console.log("Notas: " + notas[cont]);
+            cont++;
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

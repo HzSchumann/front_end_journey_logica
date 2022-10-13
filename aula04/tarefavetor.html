@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let frutas = ["banana", "maça", "abacate", "abacaxi"];
+        // let novaFrutas = [];
+
+        // let frutaRemover = prompt("Qual fruta vc quer remover?");
+        // console.log("Fruta excluir: " + frutaRemover);
+        // for(let indFruta = 0; indFruta < frutas.length; indFruta++){
+        //     console.log("Fruta: " + frutas[indFruta]);
+        //     console.log("Comparação: " + frutas[indFruta]==frutaRemover);
+        //     if(frutas[indFruta]!=frutaRemover){
+        //         novaFrutas.push(frutas[indFruta]);
+        //     }
+
+        // }
+
+        // alert(novaFrutas)
+
+        let novaFruta = [];
+        let novaFrutas = [];
+        let adicionarFrutas = [];
+        let respostaContinuar = "sim";
+        let validar = false;
+
+        do {
+            adicionarFrutas = prompt("Qual fruta você quer adicionar? ");
+            for(let i = 0; i < novaFruta.length; i++){
+                if(novaFruta[i] == adicionarFrutas){
+                    alert("Digite outra fruta");
+                    validar = true;
+                    break;
+                }else{
+                    validar = false;
+                }
+            }
+
+            if(!validar){ 
+                novaFruta.push(adicionarFrutas)
+            }
+            respostaContinuar = prompt("Quer adicionar outra fruta? ");
+
+        } while (respostaContinuar === "sim");
+
+        var remover = prompt("Qual fruta você quer remover? ");
+
+        for (let indFruta = 0; indFruta < novaFruta.length; indFruta++) {
+            console.log("Fruta: " + novaFruta[indFruta]);
+            if (novaFruta[indFruta] != remover) {
+                novaFrutas.push(novaFruta[indFruta]);
+            }
+        }
+
+            console.log(novaFruta)
+            console.log(novaFrutas)
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

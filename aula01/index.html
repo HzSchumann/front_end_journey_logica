@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- referancia ao arquivo aula01.js -->
+    <!-- <script src="aula01.js"></script>
+    <script>alert("Olá")</script> -->
+</head>
+<body>
+    <div id="resultado"></div>
+</body>
+<script>
+    const DOLAR = 5.18;
+    //coloca informacoes dinamicamente
+    // valor = prompt("Digite um número: ");
+    //pega a informação salva na variavel valor e envia para o elemento com o id de referencia
+    // document.getElementById("resultado").innerHTML="Valor: " + valor;
+
+    // valor = prompt('Digite a quantidade de dolares: ');
+    // valorReal = (valor / DOLAR);
+    // document.getElementById("resultado").innerHTML="Valor em real: R$:" + valorReal;
+
+    // quilometrosInicio = prompt("Quantos litros o carro mostra no inicio da viagem?");
+    // quilometrosPosto = prompt("Quantos litros o carro mostra no posto de gasolina?");
+    // litrosReabastecidos = prompt("Quantos litros foram reabastecidos?");
+
+    // quilometroLitro = (litrosReabastecidos / (quilometrosPosto - quilometrosInicio));
+
+    // document.getElementById("resultado").innerHTML="Media de litros por km: " + quilometroLitro;
+
+    nota1 = prompt("Informe a nota 1?");
+    nota2 = prompt("Informe a nota 2?");
+    nota3 = prompt("Informe a nota 3?");
+
+    media = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3)) / 3;
+
+    document.getElementById("resultado").innerHTML="A média das 3 notas é: " + media;
+</script>
+</html>
